@@ -1,15 +1,90 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8a5a5;
+}
+
 .container
 {
     
-    width: 100%;
+    width: 95%;
+    height: 40rem;
+    margin: 30px;
+    display: block;
     background-color: rgb(180, 241, 220);
+    border-radius: 10px;
 
 }
 .row
 {
+    padding-top: 5%;
+    padding-left: 2%;
     display: flex;
 }
 .col-2
 {
     flex:50%;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 30px;
+}
+.inline
+{
+    display: inline-block;
+}
+ 
+.circle
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 5px;
+
+}
+.circle:hover{
+    border:3px solid white ;
+}
+
+
+
+.color-box
+{
+    margin: 5px;
+    padding: 10px;
+}
+
+
+
+.file-upload {
+    background-color: #4ddb10;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+}
+
+.file-upload:hover {
+    background-color: #008ecc;
+}
+
+.upload-icon {
+    width: 20px;
+    height: 20px;
+    background-image: url('data:image/svg+xml;base64,YOUR_BASE64_ICON'); /* Use a base64 SVG icon here */
+    background-size: contain;
+    margin-right: 10px;
+}
+
+#file {
+    display: none;
 }

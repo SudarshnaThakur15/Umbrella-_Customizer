@@ -6,12 +6,18 @@ document.getElementById("file").addEventListener("change", function () {
     if (file && file.size > maxSize) {
         alert("File is too large! Please select a file smaller than 2MB.");
     } else if (file) {
-        // Create a URL for the selected file and set it as the src of the image
         const imageURL = URL.createObjectURL(file);
 
         document.getElementById("logo").src = imageURL;
         document.getElementById("logo").style.display= "block";
     }
+});
+
+const circles = document.getElementsByClassName("circle");
+Array.from(circles).forEach(circle => {
+    circle.addEventListener("click", function () {
+             document.getElementById("umbrella").setAttribute("src", `images/${this.id} umbrella.png`);
+    });
 });
 
 
